@@ -13,36 +13,33 @@ class ContactUsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.white,
-      appBar: AppBar(title: Text(AppStrings.contactUs.tr(),)),
+      appBar: AppBar(
+          title: Text(
+        AppStrings.contactUs.tr(),
+      )),
       body: Padding(
         padding: const EdgeInsets.only(top: AppPadding.p30),
         child: ContactUs(
           textColor: ColorManager.grey,
           textFont: FontConst.fontFamily,
           cardColor: ColorManager.white,
-
           companyName: AppStrings.companyName.tr(),
           companyFont: FontConst.fontFamily,
           companyFontSize: AppSize.s24,
           companyColor: ColorManager.primary,
-
           tagLine: AppStrings.tagLine.tr(),
           taglineFont: FontConst.fontFamily,
           taglineFontWeight: FontWightManager.regular,
           taglineColor: ColorManager.lightGrey,
-
           dividerThickness: .65,
           dividerColor: ColorManager.grey,
-
           emailText: AppStrings.emailHint.tr(),
           email: AppStrings.myEmail,
-          emailColor: ColorManager.primary,
-
+         // emailColor: ColorManager.primary,
           githubUserName: AppStrings.githubUserName,
-          githubColor: ColorManager.primary,
-
+          //githubColor: ColorManager.primary,
           linkedinURL: AppStrings.linkedinURL,
-          linkedInColor: ColorManager.primary,
+          //linkedInColor: ColorManager.primary,
         ),
       ),
     );

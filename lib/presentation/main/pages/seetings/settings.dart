@@ -1,17 +1,18 @@
+import 'dart:math' as math;
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:share_plus/share_plus.dart';
+
 import 'package:tut_app/app/app_prefs.dart';
 import 'package:tut_app/app/di.dart';
 import 'package:tut_app/data/data_source/local_data_source.dart';
 import 'package:tut_app/presentation/resources/assets_manager.dart';
 import 'package:tut_app/presentation/resources/language_manager.dart';
-import 'package:tut_app/presentation/resources/values_manager.dart';
 import 'package:tut_app/presentation/resources/routes_manager.dart';
 import 'package:tut_app/presentation/resources/strings_manager.dart';
-import 'dart:math' as math;
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -44,7 +45,7 @@ class _SettingsPageState extends State<SettingsPage> {
             title: AppStrings.contactUs.tr(),
             trailingIcon: ImagesAssets.settingsRightArrowIcon,
             onTap: () {
-               _contactUs();
+              _contactUs();
             },
           ),
           _getListTitle(
